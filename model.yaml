@@ -1,0 +1,8 @@
+Employee:
+  employeeName: TEXT NOT NULL
+  employeeEmail: TEXT NOT NULL
+  employeePhone: TEXT
+  employeeAge: INT
+Skill:
+  skillName: TEXT NOT NULL
+  skillDesc: TEXT
