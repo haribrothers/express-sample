@@ -9,8 +9,10 @@ function getMultiple(page = 1) {
   const meta = {page};
 
   return {
+    success: true,
     data,
-    meta
+    meta,
+    message: `Employee records successfully retrived`
   }
 }
 
@@ -59,7 +61,11 @@ function create(employeeObj) {
     message = 'Employee created successfully';
   }
 
-  return {message};
+  return {
+    success: true,
+    message: 'Employee created successfully'
+  }
+
 }
 
 module.exports = {
